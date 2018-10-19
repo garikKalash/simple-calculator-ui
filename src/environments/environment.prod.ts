@@ -1,4 +1,4 @@
 export const environment = {
-  serviceUrl: 'https://simple-calculator-by-gk.herokuapp.com/',
+  serviceUrl: 'https://simplecalculatorbygkservice.herokuapp.com/',
   production: true
 };
