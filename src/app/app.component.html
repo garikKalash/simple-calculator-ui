@@ -1,5 +1,14 @@
-<mat-form-field class="example-full-width">
+<div style="margin: 40%">
+<mat-form-field>
   <input matInput placeholder="Expression" [(ngModel)]="expression">
 </mat-form-field>
+<br/>
 <button mat-button color="blue" (click)="evaluateExpression()">Evaluate</button>
-<p>{{result}}</p>
+  <div style="background-color: lightgreen; border-radius: 5%" *ngIf="result">
+    <p>Result is: <span style="font-weight: bold">{{result}}</span></p>
+  </div>
+
+  <div *ngIf="errorMessage" style="background-color: pink;  border-radius: 5%">
+     <p>{{errorMessage}}</p>
+  </div>
+</div>

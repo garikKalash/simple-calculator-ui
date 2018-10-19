@@ -9,11 +9,17 @@ import {CalculatorService} from './service/CalculatorService';
 export class AppComponent {
   expression = '';
   result: number = null;
+  errorMessage: string = '';
   constructor(private calculatorService: CalculatorService) {}
 
   evaluateExpression() {
     this.calculatorService.getResult(this.expression).subscribe(value => {
       this.result = value;
+      this.errorMessage = '';
+    },
+    error => {
+        this.errorMessage = error.error;
+        this.result = null;
     });
   }
 
