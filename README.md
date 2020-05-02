@@ -10,7 +10,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Production server
 
-Navigate to `expevaluatoragritask.herokuapp.com`.
+Navigate to `simplecalcbygk.herokuapp.com`.
 
 ## Code scaffolding
 
